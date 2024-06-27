@@ -1,0 +1,12 @@
+0
+8
+16 -> recieving message (6, 'oi') from 0, prev clock was: 16
+24 -> sending message (24, 'oi') to 2
+32
+40
+48
+61 -> recieving message (60, 'oi') from 2, prev clock was: 56
+69 -> sending message (69, 'oi') to 0
+77
+85
+93
