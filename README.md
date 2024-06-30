@@ -1,9 +1,9 @@
-**Relatório Integrado de Implementação e Análise de Algoritmos Distribuídos Usando MPI4PY**
+# Relatório Integrado de Implementação e Análise de Algoritmos Distribuídos Usando MPI4PY
 
-**Introdução:**
+## Introdução:
 Este relatório compila a implementação e análise de três algoritmos distintos em um ambiente de computação distribuída usando a biblioteca `mpi4py`. Os algoritmos abordados incluem exclusão mútua distribuída, sincronização de relógios de Lamport e eleição de líder. Cada um desses algoritmos desempenha um papel crucial em sistemas distribuídos, garantindo a coordenação e a consistência entre processos paralelos.
 
-**Descrição dos Problemas e Algoritmos:**
+## Descrição dos Problemas e Algoritmos:
 
 1. **Exclusão Mútua Distribuída:**
    - **Objetivo:** Garantir que apenas um processo por vez acesse um recurso compartilhado em um ambiente de computação paralela.
@@ -17,7 +17,7 @@ Este relatório compila a implementação e análise de três algoritmos distint
    - **Objetivo:** Eleger o nó com o maior valor como líder entre um conjunto de nós interconectados.
    - **Algoritmo:** Variação do algoritmo de eleição de líder, onde nós comunicam-se para identificar o líder com base no maior valor.
 
-**Detalhes da Implementação:**
+## Detalhes da Implementação:
 
 - **Bibliotecas Utilizadas:**
   - `mpi4py`: Facilita a comunicação entre processos em sistemas distribuídos.
@@ -29,7 +29,7 @@ Este relatório compila a implementação e análise de três algoritmos distint
 - **Ambiente de Execução:**
   - Todos os códigos são destinados a serem executados em ambientes que suportem MPI, como clusters de computadores ou sistemas multicore.
 
-**Resultados de Experimentos:**
+## Resultados de Experimentos:
 
 1. **Exclusão Mútua Distribuída:**
    - Apenas um processo por vez foi capaz de entrar na seção crítica, validado pelas mensagens de log.
@@ -40,5 +40,9 @@ Este relatório compila a implementação e análise de três algoritmos distint
 3. **Eleição de Líder:**
    - O nó com o maior valor foi consistentemente eleito como líder, com eficiência medida pelo número de mensagens trocadas e tempo de execução.
 
-**Conclusão:**
+## Conclusão:
 A implementação e análise dos algoritmos distribuídos usando `mpi4py` demonstraram a eficácia desta biblioteca em simular comportamentos complexos em sistemas distribuídos. Os experimentos realizados ajudaram a entender desafios como sincronização, comunicação entre processos e tratamento de condições de corrida.
+
+## Referências
+
+A única referência utilizada foi o tutorial de `mpi4py` presente em [https://mpi4py.readthedocs.io/en/stable/tutorial.html](https://mpi4py.readthedocs.io/en/stable/tutorial.html)
